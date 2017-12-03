@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+    <title>webVR-helloworld</title>
+    <style type="text/css">
+    * {
+	    margin: 0;
+	    padding: 0;
+    }
+    html,body {
+        height: 100%;
+        overflow: hidden;
+    }
+    </style>
+</head>
+<body>
+</body>
+<script src="./vendor/three.min.js"></script>
+<script src="./vendor/webvr-polyfill.js"></script>
+<script>
+var scene = new THREE.Scene();
+
+//定义一个60°的视角，视线范围在1到1000的透视相机
+var camera = new THREE. new THREE.PerspectiveCamera(60,window.innerWidth/window.innerHeight,1,1000);
+scene.add(camera);
+
+</script>
+</html>
